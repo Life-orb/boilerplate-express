@@ -47,7 +47,11 @@ res.json ({ echo : req.params.word })
   
   )
 
+app.post('/name', function(req, res){
+res.json({name : ?first=firstname&last=lastname})
 
+
+}
 
 
 
