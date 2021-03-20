@@ -14,6 +14,7 @@ app.get("/", (req, res) =>
     var c = req.method;
     '/', 
     console.log(c+" "+a+' - '+b);
+    alert(c+" "+a+' - '+b);
     next();
   }
   )
