@@ -8,9 +8,8 @@ app.get("/", (req, res) =>
   );
 
 
-  app.use (function(req, res, next) { '/', 
-    console.log(req.methodc+" "+req.path+' - '+req.ip);
-    alert(c+" "+a+' - '+b);
+  app.use (function(req, res, next) {  
+    console.log(req.method+" "+req.path+' - '+req.ip);
     next();
   }
   )
