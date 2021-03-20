@@ -8,6 +8,17 @@ app.get("/", (req, res) =>
   );
 
 
+  app.use (function(req, res, next) {
+    var a = req.path;
+    var b =  req.ip;
+    var c = req.method;
+    '/', 
+    console.log(c+" "+a+' - '+b);
+    next();
+  }
+  )
+
+
   app.get("/json", function(req, res) {
 
 
