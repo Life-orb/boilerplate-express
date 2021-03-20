@@ -39,9 +39,6 @@ res.json({time: req.time})
   }}
   )
 
-function wordEcho(){return req.params.word
-
-}
 
   app.get('/:word/echo', function(req, res){    
 res.json ({ echo : req.params.word })
