@@ -48,7 +48,7 @@ res.json ({ echo : req.params.word })
   )
 
 app.get('/name', function(req, res){
-res.json({name :' /name?first=firstname&last=lastname'})
+res.json({name : "/name?first=firstname&last=lastname"})
 
 
 }
