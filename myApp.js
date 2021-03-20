@@ -14,6 +14,16 @@ app.get("/", (req, res) =>
   }
   )
 
+   function getCurrentTime() {return new Date().toString()};
+
+
+app.get("/now", function(req, res, next) { req.time = getCurrentTime();
+  next();
+},
+ function(req, res){
+res.json({time: req.time})
+
+ })
 
   app.get("/json", function(req, res) {
 
